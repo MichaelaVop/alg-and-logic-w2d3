@@ -10,16 +10,23 @@ let min = numbers[counter];
 
     console.log(numbers);
 
-    for(i = 0; i < numbers.length; i++) {
+while (counter < numbers.length-1) {
+    for(i = counter; i < numbers.length; i++) {
         if(numbers[i] < min){
-            counter += 1;
             min = numbers[i];
-            temp = numbers[i];
         }
     }
 
+    numbers[numbers.indexOf(min)] = numbers[counter];
+    numbers[counter] = min;
+    counter += 1;
+    min = numbers[counter];
 
-   console.log(counter);
+console.log(numbers);
+}
+
+
+ //  console.log(counter);
 
 }
 
