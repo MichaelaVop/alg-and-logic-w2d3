@@ -12,7 +12,7 @@ let j = 0;
 
     // console.log(numbers);
 
-while (counter < 3) {
+while (counter < numbers.length-1) {
     for(i = counter; i < numbers.length; i++) {
         if(numbers[i] <= min){
             min = numbers[i];
